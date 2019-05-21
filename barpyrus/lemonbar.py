@@ -9,8 +9,10 @@ def textpainter():
 class Lemonbar(EventInput):
     def __init__(self, geometry = None,
                  cmd = 'lemonbar',
-                 font = '-*-fixed-medium-*-*-*-12-*-*-*-*-*-iso10646-1',
+                 font = '-*-fixed-medium-r-normal--14-*-*-*-*-*-iso10646-1',
+                 #font = '-adobe-source code pro-medium-r-normal--13-*-*-*-*-*-iso10646-1',
                  symbol_font = '-wuncon-siji-medium-r-normal--10-100-75-75-c-80-iso10646-1',
+                 #symbol_font = '-wuncon-siji-medium-r-normal--12-100-*-*-c-*-iso10646-1',
                  background = '#ee121212',
                  foreground = '#989898',
                  lemonbar_old_percent_escapes = False,
@@ -29,7 +31,7 @@ class Lemonbar(EventInput):
         command += [ '-B', background  ]
         command += [ '-F', foreground  ]
         command += [ '-f', font  ]
-        command += '-f -*-*-*-*-*-*-2-*-*-*-*-*-*-*'.split(' ')
+        command += '-f -*-*-*-*-*-*-4-*-*-*-*-*-*-*'.split(' ')
         if symbol_font != None:
             command += [ '-f', symbol_font ]
         command += args
