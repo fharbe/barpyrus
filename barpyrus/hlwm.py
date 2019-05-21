@@ -74,20 +74,66 @@ def underlined_tags(self, painter): # self is a HLWMTagInfo object
         painter.ol('#454545')
     painter.space(3)
     if self.name == 'irc':
-        #painter.symbol(0xe1ec)
         #painter.symbol(0xe1a1)
         painter.symbol(0xe1ef)
+    elif self.name == 'cli':
+        #painter.symbol(0xe1ec)
+        painter.symbol(0xe1ef)
     elif self.name == 'vim':
-        painter.symbol(0xe1cf)
+        #painter.symbol(0xe1ed)
+        painter.symbol(0xe1bf)
+        #painter.symbol(0xe1b8)
+    elif self.name == 'doc':
+        painter.symbol(0xe1ed)
+    elif self.name == 'misc':
+        painter.symbol(0xe1d9)
+        #painter.symbol(0xe1d6)
+    elif self.name == 'xdg':
+        painter.symbol(0xe09f)
+        #painter.symbol(0xe1d7)
+    elif self.name == 'dev':
+        painter.symbol(0xe0c1)
+    elif self.name == 'chat':
+        #painter.symbol(0xe19f)
+        painter.symbol(0xe0ad)
     elif self.name == 'web':
         painter.symbol(0xe19c)
+        #painter.symbol(0xe1a0)
+        #painter.symbol(0xe26d)
     elif self.name == 'mail':
-        #painter.symbol(0xe1a8)
+        #painter.symbol(0xe102)
         painter.symbol(0xe071)
-    elif self.name == 'scratchpad':
-        painter.symbol(0xe022)
     elif self.name == 'music':
         painter.symbol(0xe05c)
+    elif self.name == 'video':
+        painter.symbol(0xe1dd)
+    elif self.name == 'tmp':
+        #painter.symbol(0xe1c0)
+        painter.symbol(0xe0aa)
+    elif self.name == 'foo':
+        painter.symbol(0xe19d)
+    elif self.name == 'evil':
+        painter.symbol(0xe19a)
+    #elif self.name == '0':
+    #    painter.symbol(0xe169)
+    #elif self.name == '1':
+    #    painter.symbol(0xe16a)
+    #elif self.name == '2':
+    #    painter.symbol(0xe16b)
+    #elif self.name == '3':
+    #    painter.symbol(0xe16c)
+    #elif self.name == '4':
+    #    painter.symbol(0xe16d)
+    #elif self.name == '5':
+    #    painter.symbol(0xe16e)
+    #elif self.name == '6':
+    #    painter.symbol(0xe16f)
+    #elif self.name == '7':
+    #    painter.symbol(0xe170)
+    #elif self.name == '8':
+    #    painter.symbol(0xe171)
+    #elif self.name == '9':
+    #    painter.symbol(0xe172)
     else:
         painter += self.name
     painter.space(3)
